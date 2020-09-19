@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking_page</title>
+</head>
+<body style=Background:Black;color:Red>
+		<form method="POST" actio='/result'>
+			{{ sd.as_p }}
+			{% csrf_token %}
+			<input type="submit" name="submit">
+		</form>
+</body>
+</html>

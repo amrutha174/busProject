@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body style=background:Black;color:Blue>
+	<center>
+	    <marquee><h1>{{ msg }}</h1></marquee>
+		<h1>{{ date }}</h1><br/>
+	<form  method='POST'>
+		{{ Book_lst.as_p }}
+		{% csrf_token %}
+		<input type="submit" name="submit">
+	</center>
+	</form>
+</body>
+</html>
